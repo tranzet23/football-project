@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New Project</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="site-container">
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__left header__item">
+                <button class="menu_open-btn js-open-modal" data-modal="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span class="small__span"></span>
+                </button>
+            </div>
+            <div class="header__center header__item">
+                <a href="#" class ="logo header__logo header__logo-pc">
+                    <svg class="header__logo-svg">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <a class="logo header__logo header__logo-mob" href="index.html"> <img class="header__logo-svg" src="img/logo2.svg" alt=""></a>
+            </div>
+            <div class="header__right header__item">
+                <div class="header__number">
+                    <a href="">+7 (495) 215 20 27</a>
+                </div>
+                <div class="header__email">
+                    <a href=""> camp@avangard-football.ru</a>
+                </div>
+            </div>
+        </div>
+</header>
+
+    <main id="fullpage" class="main">
+        <section class="section contacts header-border">
+    <div class="section__inner">
+        <div class="contacts__inner">
+            <div class="contacts__content">
+                <div class="contacts__content-inner">
+                    <h1 class="default__title contacts__title">Контакты</h1>
+                    <div class="contacts__items">
+                        <div class="contacts__item">
+                            <img class="contacts__svg1" src="img/map-pin1.svg" alt="">
+                            <div class="contacts__item--wrap-text">
+                                <p class="default__title contacts__item-title">Адрес</p>
+                                <p class="default__text contacts__item-text">г. Москва, ул. Адмирала Руднева д.4</p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <img class="contacts__svg2" src="img/phone.svg" alt="">
+                            <div class="contacts__item--wrap-text">
+                                <p class="default__title contacts__item-title">телефон</p>
+                                <p class="default__text contacts__item-text">+7 (495) 215 20 27</p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <img class="contacts__svg3" src="img/email.svg" alt="">
+                            <div class="contacts__item--wrap-text">
+                                <p class="default__title contacts__item-title">Эл. почта</p>
+                                <p class="default__text contacts__item-text">camp@avangard-football.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="contacts__map__inner">
+                <img src="img/map_contacts.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <footer class="section footer fp-auto-height">
+        <div class="container">
+            <div class="footer__inner">
+
+            <div class="footer__logo">
+                <svg class="header__logo-svg footer__logo-svg">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content__top-wrap">
+                    <p class="default__text footer__text">Политика конфиденциальности</p>
+                    <p class="default__text footer__text">Разработка сайта digital-foton</p>
+                </div>
+                <div class="footer__content__bottom-wrap">
+                    <p class="default__text footer__text">Академия Футбольного Мастерства «АВАНГАРД» © 2014</p>
+                </div>
+            </div>
+
+            <div class="footer__content-right">
+                <div class="default__text header__number">
+                    <a class="default__text header__email" href="tel:"> +7 (495) 215 20 27</a>
+                </div>
+                <div class="default__text header__email">
+                    <a class="default__text header__email" href="email"> camp@avangard-football.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    </main>
+
+
+    <!--    &lt;!&ndash; Пример вызова модалки через кнопку &ndash;&gt;-->
+    <!--    <button class="js-open-modal" data-modal="example-modal" style=" margin: 100px 0 0 100px; border: 1px solid #000; padding: 10px;">-->
+    <!--      Open modal-->
+    <!--    </button>-->
+
+    <!-- Modal example -->
+<div class="modal" id="example-modal" aria-hidden="true">
+    <div class="modal__overlay">
+        <div class="modal__container modal__container--text">
+            <button class="btn modal__btn-close">
+                <svg>
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__content">
+                <h2>Test Modal</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal example  -->
+
+<!-- Modal application -->
+    <div class="modal" id="application-modal" aria-hidden="true">
+        <div class="modal__overlay application__overlay">
+            <div class="modal__container modal__container--text application__container">
+                <button class="btn modal__btn-close">
+                    <img class="close__btn" src="img/close1.svg" alt="">
+                </button>
+                <div class="modal__content application__content">
+                    <h2 class="default__title apl_title">ЗАЯВКА</h2>
+                    <p class="default__text apl__text">Заполните форму для записи в наш лагерь. </p>
+                    <div class="apl__radio-wrap">
+                        <form class="radio__modal-form" action="#">
+                            <p class="radio__wrap">
+                                <input type="radio" id="spring" name="radio-group" checked>
+                                <label class="default__text radio__modal" for="spring">Осень-2021</label>
+                            </p>
+                            <p class="radio__wrap">
+                                <input type="radio" id="zima" name="radio-group">
+                                <label class="default__text radio__modal" for="zima">зима-2022</label>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="apl__select-box">
+                        <!--                    <div class="accordion__trainers">-->
+                        <!--                        <div class="program__content trainers__content">-->
+                        <!--                            <button class="accordion accordion__trainers">-->
+                        <!--                                <span class="acc-title trainer__title">Заезд</span>-->
+                        <!--                            </button>-->
+                        <!--                            <div class="panel panel__question">-->
+                        <!--                                <p>1</p>-->
+                        <!--                                <p>2</p>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+
+                        <div class="select-wrapper__apl">
+                            <select class="select select__apl acc-title trainer__title">
+                                <option class="option__apl" value="value1">Заезд</option>
+                                <option class="option__apl" value="value1">Заезд</option>
+                                <option class="option__apl" value="value2">Заезд</option>
+                                <option class="option__apl" value="value3">Заезд</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__content application__content">
+                    <input class="apl__input" type="text" placeholder="ФИО УЧАСТНИКА ЛАГЕРЯ (СПОРТСМЕНА)">
+                    <h3 class="default__title apl__title-mini">Контакты для связи:</h3>
+                    <input class="apl__input" type="text" placeholder="E-mail для связи">
+                    <input class="apl__input" type="text" placeholder="ТЕЛЕФОН для связи">
+                    <button class="apl__check-bottom">
+                        <ul class="unstyled centered">
+                            <li>
+                                <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                <label class="default__text checkbox__accept__text" for="styled-checkbox-1">Даю согласие на
+                                    обработку
+                                    данных</label>
+                            </li>
+                        </ul>
+                    </button>
+                    <button class="btn-reset application__btn js-open-modal" data-modal="application-modal">ОСТАВИТЬ
+                        ЗАЯВКУ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal application end -->
+
+
+<!-- Modal reviews -->
+<div class="modal" id="review-modal" aria-hidden="true">
+    <div class="modal__overlay">
+        <div class="modal__container modal__container--text">
+            <button class="btn modal__btn-close">
+                <svg>
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal__content--reviews">
+                <h2 class="default__text modal__reviews-title">Лобанов Сергей, папа Димы (г. Новокузнецк)</h2>
+                <p class="default__text modal__reviews-text">"Это был первый в нашей жизни опыт посещения такого рода
+                    лагеря. Ребенок неплохо адаптировался в новом коллективе и с новым тренером. Условия по проживанию,
+                    питанию и инфраструктуре, очень понравились. Все тренировки интересные разнообразные и интенсивные.
+                    Но справляются все и даже самые юные (нашему сыну 5 лет). Хотели бы поблагодарить весь тренерский
+                    состав АФМ "Авангард" за квалифицированную и профессионально выполненную свою работу и, в частности,
+                    тренера Дениса Николаевича. Видно, что коллектив тренеров своё дело знает. Результат его работы уже
+                    виден по последним играм нашего ребенка. Также хотим выразить свою благодарность лично директору
+                    Академии Александру
+                    Сергеевичу Кузьмину за хорошую организацию всего рабочего процесса, продуманного до мелочей. P. S.
+                    Летом 2017 г. планируем посетить один или несколько заездов в футбольный лагерь г. Сочи,
+                    организованный АФМ "Авангард". Спасибо за организацию!!!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal reviews end -->
+
+<!-- Mobile menu -->
+<div class="modal" id="mobile-menu" aria-hidden="true">
+    <div class="modal__overlay mobile-menu__overlay">
+        <div class="modal__container modal__container--text mobile-menu__container">
+            <button class="btn modal__btn-close apl_close">
+                <img class="close__btn apl_close" src="img/close1.svg" alt="">
+            </button>
+            <a class="logo__modals" href="index.html">
+                <img class="header__logo-svg" src="img/logo1.svg" alt="">
+            </a>
+            <div class="modal__content mobile-menu__content">
+                <ul class="mobile__menu-ul">
+                    <a href="index.html">
+                        <li class="default__title mobile__menu-text">О ЛАГЕРЕ</li>
+                    </a>
+                    <a href="spring.html">
+                        <li class="default__title mobile__menu-text">ОСЕНЬ 21</li>
+                    </a>
+                    <a href="summer.html">
+                        <li class="default__title mobile__menu-text">Лето 22</li>
+                    </a>
+                    <a href="trainers.html">
+                        <li class="default__title mobile__menu-text">НАШИ ТРЕНЕРЫ</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="default__title mobile__menu-text">КОНТАКТЫ</li>
+                    </a>
+                </ul>
+                <button class="btn-reset mobile__menu-btn js-open-modal" data-modal="application-modal">ОСТАВИТЬ
+                    ЗАЯВКУ
+                </button>
+                <h2 class="default__title mobile-menu__phone">+7 (495) 215 20 27</h2>
+                <a href=""><h2 class="default__title mobile-menu__phone">camp@avangard-football.ru</h2></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal menu end  -->
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/global.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
